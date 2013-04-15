@@ -1,0 +1,31 @@
+@tema : yellow;
+@font-size : 20px;
+
+.borde-redondeado(@tm:10px){
+	moz-border-radius:@tm;
+	border-radius: @tm;
+}
+
+/*.titulo{
+	color: @blue ;
+}*/
+
+.box{
+	//display:block;
+	margin: 10px auto;
+	background-color: @tema;
+	.encabezado{
+		color : white;
+		font-size: @font-size +4px;
+	}
+	.contenido{
+		font-size:@font-size -6px;
+	}
+	&:hover{
+	background: black;
+	}
+
+}
+.redondeado{
+	.borde-redondeado(20px);
+}
